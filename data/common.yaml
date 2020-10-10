@@ -1,22 +1,15 @@
 ---
   users:
-    'john':
-      comment: 'John Arundel'
+    'james':
+      comment: 'James Akinniranye'
       uid: '1010'
       sshkeys:
-        - 'ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEA3ATqENg+GWACa2BzeqTdGnJhNoBer8x6pfWkzNzeM8Zx7/2Tf2pl7kHdbsiTXEUawqzXZQtZzt/j3Oya+PZjcRpWNRzprSmd2UxEEPTqDw9LqY5S2B8og/NyzWaIYPsKoatcgC7VgYHplcTbzEhGu8BsoEVBGYu3IRy5RkAcZik= john@susie'
-    'bridget':
-      comment: 'Bridget X. Zample'
-      uid: '1011'
-      sshkeys:
-        - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCiTvHgzkf9TGBIpnIUBRbsWaRNBqzrLY/OoQpzqprGFLuTzzb8MaGI9Q6GPIhil5HyXE7PWPyuwcBA4mJhIHBXWqQC5o59cdtrkgJwAybSK7z5oVt67B0qieDG/cbasxr52nMAJC3dBEF4W1s69VSq5+wLFD01iW= bridget'
-  allow_users:
-    - 'john'
-    - 'bridget'
+        - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDE9wyFwi8KeYTNOEu8OJAXIl3ikJ087x7Yl/8xhsiLsnvV7lJApNoO3VaIPcpbKDV0DotGxuIccHM2d3+QePKjgZB76T4RTS1SBe3kqr+wj2qDlLM4+D3JhODe6gei8j34mGekhYf/n7w0P25U6GCZgbZDkPyiYEAMw1etJf7kiF456AJk7eV39v5tJCaJ5hOwryE/LadRVDd1c6JaeMKhfstolWoNh8hmET2ugPK++dh4+6Esg1XepYxAtI6CVdvQ3hTsTpretFfvr6gyipuFj9/6VuE4Do7A7TqhtV9Xx6dabODEr6udkUEdAjVeZbHAGTYuoOI/kiN9tNZifdQdQisr+HjmJEjnWLVQspXELk/B0X6JfuiUZrTreCVQQRyys5OBvS1ha1+HHCcJvBvYJ+6PG+hikWA2ZAnddcrkX2v9XX9yDTPyhf1GGhmaZHmg3YPI/UU8KzpD5ARehpxSX2PeIVqUe79KW4wCLChvcZxDMscUEOWLG5Fboim/uS2q8bkxMmSINzzFbGN/WFvFSEV8R3MnuZzVDss4QfMh+Np0i8LnxAOCuzZkumFxVkeZalcef1d3aauMyP1GtX4e8S8iYvNbrilSNOzkV+pcXW94nJ7FEmmxWCsbK4sv9btQNHs9cvQooZ1/SLkcaZG7siBGHQZttaFZ8S5nUpBgBw== jamesniranye@gmail.com'
+    allow_users:
+    - 'james'
     - 'ubuntu'
   sudoers:
-    - 'john'
-    - 'bridget'
+    - 'james'
     - 'ubuntu'
   classes:
     - profile::ntp
