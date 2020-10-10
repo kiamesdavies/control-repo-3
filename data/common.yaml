@@ -5,7 +5,7 @@
       uid: '1010'
       sshkeys:
         - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDE9wyFwi8KeYTNOEu8OJAXIl3ikJ087x7Yl/8xhsiLsnvV7lJApNoO3VaIPcpbKDV0DotGxuIccHM2d3+QePKjgZB76T4RTS1SBe3kqr+wj2qDlLM4+D3JhODe6gei8j34mGekhYf/n7w0P25U6GCZgbZDkPyiYEAMw1etJf7kiF456AJk7eV39v5tJCaJ5hOwryE/LadRVDd1c6JaeMKhfstolWoNh8hmET2ugPK++dh4+6Esg1XepYxAtI6CVdvQ3hTsTpretFfvr6gyipuFj9/6VuE4Do7A7TqhtV9Xx6dabODEr6udkUEdAjVeZbHAGTYuoOI/kiN9tNZifdQdQisr+HjmJEjnWLVQspXELk/B0X6JfuiUZrTreCVQQRyys5OBvS1ha1+HHCcJvBvYJ+6PG+hikWA2ZAnddcrkX2v9XX9yDTPyhf1GGhmaZHmg3YPI/UU8KzpD5ARehpxSX2PeIVqUe79KW4wCLChvcZxDMscUEOWLG5Fboim/uS2q8bkxMmSINzzFbGN/WFvFSEV8R3MnuZzVDss4QfMh+Np0i8LnxAOCuzZkumFxVkeZalcef1d3aauMyP1GtX4e8S8iYvNbrilSNOzkV+pcXW94nJ7FEmmxWCsbK4sv9btQNHs9cvQooZ1/SLkcaZG7siBGHQZttaFZ8S5nUpBgBw== jamesniranye@gmail.com'
-    allow_users:
+  allow_users:
     - 'james'
     - 'ubuntu'
   sudoers:
