@@ -1,8 +1,9 @@
 #!/bin/bash
 PUPPET_REPO=https://github.com/kiamesdavies/control-repo-3.git
+IDENTITY="-i /Users/atlantis/.vagrant.d/insecure_private_key"
 if [ "$#" -lt 2 ]; then
   cat <<USAGE
-Usage: $0 TARGET HOSTNAME [BRANCH]
+Usage: $0 TARGET HOSTNAME [PORT] [BRANCH] 
 Install Puppet on the node TARGET (IP address or DNS name) and run 
 the bootstrap process. Set the hostname to HOSTNAME, and optionally use 
 the control repo branch BRANCH.
@@ -11,11 +12,12 @@ USAGE
 fi
 TARGET=$1
 HOSTNAME=${2}
-BRANCH=${3:-production}
+PORT=${3:-22}
+BRANCH=${4:-production}
 OPTIONS="-oStrictHostKeyChecking=no"
 echo -n "Copying bootstrap script... "
-scp ${OPTIONS} $(dirname $0)/bootstrap.sh ubuntu@${TARGET}:/tmp
+scp ${IDENTITY} ${OPTIONS} -P ${PORT} $(dirname $0)/bootstrap.sh vagrant@${TARGET}:/tmp
 echo "done."
 echo -n "Bootstrapping... "
-ssh ${IDENTITY} ${OPTIONS} ubuntu@${TARGET} "sudo bash /tmp/bootstrap.sh ${PUPPET_REPO} ${HOSTNAME} ${BRANCH}"
+ssh ${IDENTITY} ${OPTIONS} -p ${PORT}  vagrant@${TARGET} "sudo bash /tmp/bootstrap.sh ${PUPPET_REPO} ${HOSTNAME} ${BRANCH}"
 echo "done."
